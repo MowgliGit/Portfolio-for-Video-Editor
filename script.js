@@ -323,11 +323,10 @@
     iframeBox.innerHTML = "";
     iframeBox.appendChild(iframe);
 
-    // Show video, hide image + play
     thumb.style.display = "none";
-    playBtn.style.display = "none";
     iframeBox.style.display = "block";
     closeBtn.style.display = "block";
+    playBtn.style.display = "none";
   }
 
   function handleClose(closeBtn) {
@@ -340,13 +339,11 @@
 
     if (!thumb || !iframeBox || !playBtn) return;
 
-    // Remove iframe (stop video)
     iframeBox.innerHTML = "";
     iframeBox.style.display = "none";
 
-    // Restore image + centered play button
     thumb.style.display = "block";
-    playBtn.style.display = "grid"; // center again (matches CSS)
+    playBtn.style.display = "grid";
     closeBtn.style.display = "none";
   }
 })();
@@ -402,3 +399,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(section);
 });
+//ABOUT US CONTENT
+// ABOUT PAGE – VIDEO PLAY LOGIC

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel Jovanov - Marketing Videographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--“Hey, we will use YouTube soon, start the connection early.” -->
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="preconnect" href="https://s.ytimg.com" />
+    <!--“Hey, we will use YouTube soon, start the connection early.” -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="contact-section" id="contact-section">
+        <!--HEADER & NAVIGATION -->
+        <header class="header">
+          <div>
+            <a class="logo" href="#section-hero" aria-label="BioBlue Home"
+              ><img src="./images/logo.png" class="logo-img" alt="logo image"
+            /></a>
+          </div>
+          <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+            <ul class="main-nav-list">
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="#section-services">SERVICES</a>
+              </li>
+              <li class="main-nav-item dropdown">
+                <a class="main-nav-link" href="#section-portfolio"
+                  >PORTFOLIO ▾</a
+                >
+                <ul class="sub-menu">
+                  <li class="main-sub-nav-item">
+                    <a class="main-sub-nav-link" href="#video-production"
+                      >Video Production</a
+                    >
+                  </li>
+                  <li class="main-sub-nav-item">
+                    <a class="main-sub-nav-link" href="#lifestyle-photography"
+                      >Lifestyle Photography</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="contact.html">CONTACT US</a>
+              </li>
+              <li class="main-nav-item">
+                <a class="main-nav-link nav-cta" href="#section-book">
+                  Book a call
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-social-icon-box">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+          </div>
+          <button
+            class="btn-mobile-nav"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            data-state="closed"
+          >
+            <ion-icon
+              name="menu-outline"
+              class="icon-mobile-nav"
+              aria-hidden="true"
+            ></ion-icon>
+            <ion-icon
+              name="close-outline"
+              class="icon-mobile-nav"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+        </header>
+        <!-- END OF HEADER & NAVIGATION -->
+        <!-- SECTION CONTACT -->
+        <div class="overlay"></div>
+        <div class="main-content">
+          <h2 class="main-heading">
+            Have a project in mind? Tell us a bit about your vision and
+            timeline.
+          </h2>
+          <p class="main-paragraph">
+            We’ll get back to you shortly to discuss how we can help bring it to
+            life.Share your ideas, budget, and timeline. We’ll review your
+            message and reply within 24 hours.
+          </p>
+        </div>
+      </section>
+      <section class="section section-cta">
+        <div class="container cta-container">
+          <div class="grid grid---2-cols">
+            <div class="cta-form">
+              <form action="#" class="form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="name"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="flex">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter Your Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="form-group select-wrap">
+                    <label for="select-price">Enter your Project Budget</label>
+                    <select id="select-price" name="budget" required>
+                      <option value="">Select Budget</option>
+                      <option value="0-500">$0 - $500</option>
+                      <option value="500-1000">$500 - $1000</option>
+                      <option value="1000-2000">$1000 - $2000</option>
+                      <option value="2000k+">$2000+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Tell us about your project..."
+                  ></textarea>
+                  <button type="button" class="btn-submit">Submit now</button>
+                </div>
+              </form>
+            </div>
+            <div class="cta-info">
+              <div>
+                <p class="cta-info-text">Email Support</p>
+                <address>pavel@playitback.studio</address>
+              </div>
+              <div>
+                <p class="cta-info-text">WhatsApp</p>
+                <address>+389 78 390 337</address>
+              </div>
+              <div>
+                <div class="cta-testimonial-field">
+                  <div class="flex">
+                    <img
+                      src="./images/testimonialClient.jpeg"
+                      alt="testimonial client"
+                      class="cta-img"
+                    />
+
+                    <div>
+                      <p class="cta-testimonial-name">Dushyant (D) Shahrawat</p>
+                      <p class="cta-testimonial-job">FinTech Investment</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="cta-testimonial-text">
+                      PERFECTION! The best feedback I can give is that I will
+                      not be looking for anyone else for my video and photo
+                      needs. He's my guy going forward and I'm excited to work
+                      with him on more projects! This is just the beginning
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--END OF SECTION LOGO-->
+    </main>
+    <script src="./script.js"></script>
+    <!--ION ICON USAGE-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
